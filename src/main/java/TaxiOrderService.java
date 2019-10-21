@@ -8,7 +8,7 @@ public class TaxiOrderService {
     int price(int distance) {
         int totalPrice = distance * pricePerKm + landingPrice;
         if (totalPrice > priceForDiscount) {
-            double discount = (totalPrice * discountPercentage) / 100;
+            int discount = (totalPrice * discountPercentage) / 100;
             if (discount < maxDiscount) {
                 totalPrice -= discount;
             } else {
