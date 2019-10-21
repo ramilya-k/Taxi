@@ -1,3 +1,5 @@
+package ru.itpark;
+
 public class TaxiOrderService {
     private int landingPrice = 60;
     private int pricePerKm = 20;
